@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovies</title>
+    <link rel = "shortcut icon" href ="pictures/popcorn-favicon.png">
+    <link rel="stylesheet" href="My-Movies_style.css">
+</head>
+
+<body>
+    <div id="top"></div>
+
+    <header>
+        <h1>MyMovies</h1>
+        <img src="pictures/popcorn.png" alt="Popcorn Logo" class="logo">
+        <span>Every unforgettable story begins with a single scene.</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#Home.html">Home</a></li>
+            <li><a href="#Releases.html">New Releases</a></li>
+            <li><a href="#Genres.html">Genres</a></li>
+            <li><a href="#Top Rated.html">Top Rated</a></li>
+            <li><a href="#Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside class="left-sidebar">
+
+            <h2> Weekly Most Watched Movies</h2>
+            <ol type="I">
+                    <li> The Substance</li>
+                    <li> Megalopolis</li>
+                    <li> Green Book</li>
+                    <li> Anora</li>
+                    <li> The Aristocats</li>
+            </ol>
+            <br><br>
+
+            <h2> Best Horror Movie Survey</h2>
+            <form name="survey" method="get">
+                <input type="radio" name="choice"> The Shining
+                <br>
+                <input type="radio" name="choice"> Suspiria
+                <br>
+                <input type="radio" name="choice"> Psycho
+                <br>
+                <input type="radio" name="choice"> Carrie
+                <br>
+                <input type="radio" name="choice"> LongLegs
+                <br><br>
+                <input type="submit" value="Confirm">
+                <input type="reset" value="Cancel">
+            </form>
+            <br><br>
+
+            <h2>Leave a Movie Comment</h2>
+            <form>
+                <label for="movieName">Movie Name:</label>
+                <input type="text" id="movieName" placeholder="Movie Name">
+                <label for="movieComment">Comment:</label>
+                <textarea id="movieComment" rows="4" placeholder="Write your comment..."></textarea>
+                <button type="button" onclick="submitComment()">Submit Comment</button>
+            </form>
+            <br><br>
+        </aside>
+        
+        <article>
+            <h2>Movies in Theaters</h2>
+            
+            <section class="movie">
+                <img src="pictures/-alien-romulus-.jpg" alt="-alien-romulus-">
+                <h2>Alien Romulus</h2>
+                <p>In Alien: Romulus, the iconic science fiction horror franchise returns to its roots with a fresh storyline set against the familiar backdrop of deep space terror. The film promises to reintroduce the terrifying encounters between humans and the deadly xenomorphs, blending psychological suspense with visceral action. Under the direction of Fede Álvarez, Alien: Romulus seeks to capture the claustrophobic tension and existential dread that made the original films so impactful, while expanding on the universe’s intricate mythology to captivate a new generation of fans.</p>
+            </section>
+            <section class="movie">
+                <img src="pictures/-challengers-.jpg" alt="-challengers-">
+                <h2>Challengers</h2>
+                <p>Challengers is a gripping sports drama that weaves themes of ambition, competition, and romance into the high-stakes world of professional tennis. The narrative follows three young athletes caught in a tangled web of personal and professional rivalry, exploring the intensity and psychological challenges that come with striving for greatness. Directed by Luca Guadagnino, the film offers audiences a nuanced portrayal of relationships and the personal costs of competitive success, providing a fresh perspective on the lives of elite athletes both on and off the court.</p>
+            </section>
+            <section class="movie">
+                <img src="pictures/-furiosa-a-mad-max-saga-.jpg" alt="-furiosa-a-mad-max-saga-">
+                <h2>Furiosa A Mad Max Saga</h2>
+                <p>Furiosa: Mad Max Saga delves into the origins of one of the franchise’s most enigmatic and resilient characters, Imperator Furiosa, in the dystopian world of Mad Max. This prequel transports audiences to the brutal wasteland years before the events of Mad Max: Fury Road, providing insights into Furiosa’s formative years and the trials that shaped her into a fierce warrior. Directed by George Miller, the film promises to blend high-octane action with compelling character development, expanding the rich universe that has captivated viewers for decades.</p>
+            </section>
+            <section class="movie">
+                <img src="pictures/-poor-things-.jpg" alt="-poor-things-">
+                <h2>Poor Things</h2>
+                <p>Poor Things is a unique blend of dark comedy and surrealist storytelling, directed by Yorgos Lanthimos. The film presents a bizarre yet thought-provoking narrative centered around Bella Baxter, a reanimated woman with an insatiable appetite for life and freedom. The story, set in a fantastical Victorian era, explores Bella's journey of self-discovery as she grapples with societal norms and her own existential questions. Known for its eccentric storytelling, Poor Things challenges viewers to reflect on autonomy, identity, and humanity in a world that defies conventional logic.</p>
+            </section>
+        </article>
+
+        <aside class="right-sidebar">
+
+            <h2> Member Registration </h2>
+            <form name="Registration" method="get">
+                <table>
+                <tr><td>Full Name:</td><td><input type="text" name="member-name" id="idname" size="20" maxlength="30" required></td></tr>
+                <tr><td>E-Mail:</td><td><input type="email" name="e-mail" id="idemail" size="20" maxlength="30" required></td></tr>
+                <tr><td>Password:</td><td><input type="text" name="member-password" id="idpassword" size="20" maxlength="30" required></td></tr>
+                <br>
+                <tr><td></td><td><input type="submit" value="submit"> <input type="reset" value="reset"></td></tr>
+                </table>
+            </form> 
+            <br><br><br>
+
+            <h1>Movie Trailer</h1>
+            <video src="pictures/POOR THINGS _ Official Trailer _ Searchlight UK.mp4" height="250" width="300" autoplay preload="auto" muted loop>
+            </video>
+        </aside>
+    </main>
+
+    <a href="#top">Back to Top</a>
+
+    <footer>
+        <p>&copy; MyMovies. All rights reserved.</p>
+
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://X.com" target="_blank">X</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
